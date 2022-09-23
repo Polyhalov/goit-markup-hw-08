@@ -264,6 +264,14 @@ img {
   height: 40px;
 }
 
+.menu-nav__list {
+  padding-top: 48px;
+}
+
+.menu-nav__item + .menu-nav__item {
+  margin-top: 32px;
+}
+
 .menu-nav__link {
   text-decoration: none;
   font-family: "Roboto";
@@ -273,6 +281,56 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.menu-ifo {
+  margin-top: 306px;
+}
+
+.menu-info__item + .menu-info__item {
+  margin-top: 32px;
+}
+
+.menu-info__link.phone {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: var(--hover-color);
+}
+
+.menu-info__link.mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.menu-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+.menu-social__item + .menu-social__item {
+  margin-left: 20px;
+  border-left: 1px solid #757575;
+}
+
+.menu-social__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
 }
 
 .hero {
