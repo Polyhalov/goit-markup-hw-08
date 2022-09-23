@@ -1,0 +1,127 @@
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-nav .item+.item {
+    margin-left: 8px;
+}
+
+.portfolio-nav .filter {
+    background-color: var(--card-color);
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: transparent;
+    padding: 6px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--hover-color);
+            color: var(--white-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+        }
+}
+
+
+
+.portfolio-list {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-card .card-link {
+    text-decoration: none;
+}
+
+.portfolio-card {
+    width: calc((100% - 60px)/3);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    &:nth-child(3n) {
+            margin-right: 0;
+        }
+    &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+
+}
+
+.card-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+.card-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-back {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .card-link:hover & {
+            transform: translateY(0%);
+        }
+    .card-link:focus & {
+            transform: translateY(0%);
+        }
+}
+
+.overlay-text {
+    padding: 0px 24px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.frame {
+    border-left: 1px solid var(--ramka-color);
+    border-bottom: 1px solid var(--ramka-color);
+    border-right: 1px solid var(--ramka-color);
+    padding: 20px 24px;
+}
+
+.card-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.card-item {
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--outlink-color)
+}
