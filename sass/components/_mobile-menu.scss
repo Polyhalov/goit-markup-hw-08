@@ -18,6 +18,7 @@
 }
 .mobile-menu__container{
     position: relative;
+    padding-left: 25px;
 }
 .mobile-menu_close-btn{
     position: absolute;
@@ -78,7 +79,21 @@
 }
 .menu-social__item+.menu-social__item{
     margin-left: 20px;
-    border-left: 1px solid #757575;
+}
+.menu-social__item{
+    position: relative;
+    // outline: 1px solid red;
+}
+.menu-social__item:not(:last-child):after{
+    content: "";
+    display: block;
+        position: absolute;
+        height: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(180deg);
+        top: 0;
+        right: -10px;
+    
 }
 .menu-social__link{
     text-decoration: none;
