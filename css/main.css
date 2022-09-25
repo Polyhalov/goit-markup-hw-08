@@ -516,41 +516,49 @@ img {
   }
 }
 .work-list {
-  display: flex;
+  display: none;
 }
 
-.work-list__item {
-  width: calc((100% - 60px) / 3);
+.work-title {
+  display: none;
 }
 
-.work-list__item + .work-list__item {
-  margin-left: 30px;
+.work-section {
+  padding: 0;
 }
 
-.work-list__image {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .work-list {
+    display: flex;
+  }
+  .work-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .work-list__item + .work-list__item {
+    margin-left: 30px;
+  }
+  .work-list__image {
+    position: relative;
+  }
+  .work-list__overlay {
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .work-list__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+  }
 }
-
-.work-list__overlay {
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
-.work-list__title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
-  margin: 0;
-}
-
 .team {
   background-color: var(--card-color);
 }
