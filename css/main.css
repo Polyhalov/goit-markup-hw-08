@@ -349,6 +349,7 @@ img {
 }
 
 .overlay {
+  min-height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mobile-img.jpg");
   background-position: center top;
   background-size: 480px 400px;
@@ -408,15 +409,22 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tablet-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tablet-img@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
+    min-height: 600px;
     background-size: 1600px 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-desktop-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop-img.jpg");
   }
-  .overlay .hero-title {
+  .hero {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-title {
     color: var(--white-color);
     font-size: 44px;
     font-weight: 900;
@@ -426,6 +434,11 @@ img {
     margin-bottom: 30px;
     text-transform: uppercase;
     margin-top: 0;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop-img@2x.jpg");
   }
 }
 .feature {
