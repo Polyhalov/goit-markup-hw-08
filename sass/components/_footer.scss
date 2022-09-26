@@ -168,6 +168,42 @@ footer .logo {
     width: 450px;
 }
 }
+@media screen and (min-width:1200px){
+    .footer-text {
+            display: flex;
+            align-items: baseline;
+            // line-height: 0;
+        }
+        .contacts {
+            width: 231px;
+            text-align: left;
+        }
+        .email-input{
+            width: 358px;
+        }
+        .link-position-footer {
+             margin-left: 70px;
+        }
+        .footer-tablet{
+            padding: 0;
+        }
+        .email-feedback {
+         margin-left: auto;
+         margin-top: 0;
+         }
+         .footer-follow {
+        display: flex;
+        flex-direction: row;
+         align-items: center;
+         }
+         .follow{
+            margin-top: 0;
+            margin-left: 12px;
+         }
+         .footer-title{
+            text-align: left;
+         }
+}
 
 
 
