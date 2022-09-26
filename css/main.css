@@ -742,7 +742,7 @@ footer .logo {
 }
 
 .contacts {
-  width: 231px;
+  text-align: center;
 }
 
 .adres-nav {
@@ -764,8 +764,12 @@ footer .logo {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link-position-footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .footer-text {
-  display: flex;
   align-items: baseline;
 }
 
@@ -775,13 +779,9 @@ footer .logo {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
-}
-
-.link-position-footer {
-  margin-left: 70px;
 }
 
 .social-footer + .social-footer {
@@ -804,17 +804,19 @@ footer .logo {
 }
 
 .email-feedback {
-  margin-left: auto;
+  margin-top: 60px;
 }
 
 .footer-follow {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 
 .email-input {
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -835,7 +837,7 @@ footer .logo {
 .follow {
   display: flex;
   align-items: center;
-  margin-left: 12px;
+  margin-top: 20px;
   background-color: var(--hover-color);
   color: var(--white-color);
   font-family: Roboto;
