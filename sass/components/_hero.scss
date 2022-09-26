@@ -1,6 +1,6 @@
 .overlay{
     min-height: 400px;
-        background-image: linear-gradient(#2F303A66, #2F303A66), url('../../images/hero/hero-mobile-img.jpg');
+        background-image: linear-gradient(#2F303A66, #2F303A66), url('../images/hero/hero-mobile-img.jpg');
         background-position: center top;
         background-size: 480px 400px;
         background-repeat: no-repeat;
@@ -51,20 +51,20 @@ screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .overlay {
         background-image:linear-gradient(#2F303A66, #2F303A66),
-            url('../../images/hero/hero-mobile-img@2x.jpg');
+            url('../images/hero/hero-mobile-img@2x.jpg');
     }}
 
 @media screen and (min-width: 768px) {
     .overlay {
                 background-size: 768px 400px;
-        background-image: linear-gradient(#2F303A66, #2F303A66), url('../../images/hero/hero-tablet-img.jpg');}}
+        background-image: linear-gradient(#2F303A66, #2F303A66), url('../images/hero/hero-tablet-img.jpg');}}
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .overlay {
         background-image: linear-gradient(#2F303A66, #2F303A66),
-            url('../../images/hero/hero-tablet-img@2x.jpg');}}
+            url('../images/hero/hero-tablet-img@2x.jpg');}}
 
  @media screen and (min-width: 1200px) {
     .overlay {
