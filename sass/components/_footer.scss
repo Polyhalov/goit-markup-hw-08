@@ -149,8 +149,24 @@ footer .logo {
 .icon-follow {
     margin-left: 10px;
 }
-@media screen and (min-width:1200px){
-    
+@media screen and (min-width:768px){
+.contacts {
+        // width: 231px;
+        text-align: left;
+    }
+.footer-tablet{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.link-position-footer {
+    text-align: center;
+    margin-top:0;
+}
+.email-input {
+    width: 450px;
+}
 }
 
 
