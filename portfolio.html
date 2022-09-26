@@ -10,19 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="./css/main.min.css">
-</head>
-
+ </head>
+  
 <header class="header">
     <div class="container main-nav">
         <nav class="main-nav">
             <a href="./index.html" class="logo">Web<span class="logo2">Studio</span>
             </a>
             <ul class="site-nav list">
-                <li class="item"><a href="./index.html" class="link">Студія</a></li>
-                <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+                <li class="item"><a href="" class="link current">Студія</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
                 <li class="item"><a href="" class="link">Контакти</a></li>
             </ul>
         </nav>
+        <button type="button" class="open-menu-btn" data-menu-open>
+            <svg class="open-menu-btn__icon">
+                <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+        </button>
         <ul class="outsite-nav list">
             <li class="item">
                 <a href="mailto:info@devstudio.com" class="secondary-link">
@@ -38,10 +43,52 @@
                     +38 096 111 11 11</a></li>
         </ul>
     </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu_close-btn" data-menu-close>
+                <svg class="mobile-menu_close-icon">
+                    <use href="./images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-nav__list list">
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="">Студія</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="">Портфоліо</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="">Контакти</a>
+                </li>
+            </ul>
+            <ul class="menu-ifo list">
+                <li class="menu-info__item">
+                    <a class="menu-info__link phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li li class="menu-info__item">
+                    <a class="menu-info__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-social list">
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a class="menu-social__link" href="">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
     <!--Герой-->
     <main>
-        <section class="portfolio section">
+        <section class="portfolio section section-portfolio">
             <div class="container">
                 <h1 class="visually-hidden">Наші роботи</h1>
                 <ul class="portfolio-nav list">
@@ -55,7 +102,17 @@
                     <li class="portfolio-card">
                         <a class="card-link" href="">
                             <div class="card-overlay">
-                                <img src="./images/portfolio/img.jpg" alt="Ноутбук" width="370">
+                                <picture>
+                                    <source srcset="./images/adapt/notebook-desktop.jpg 1x, ./images/adapt/notebook-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/adapt/notebook-tablet.jpg 1x, ./images/adapt/notebook-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                    srcset="./images/adapt/notebook-mobile.jpg 1x, ./images/adapt/notebook-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    />
+                                    <img src="./images/portfolio/img.jpg" alt="Ноутбук">
+                                </picture>
                                 <div class="overlay-back">
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати
@@ -214,51 +271,55 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-text">
-                <div class="contacts">
-                    <a href="./index.html" class="logo">Web<span class="logo2">Studio</span>
-                    </a>
-                    <address>
-                        <ul class="adres-nav list">
-                            <li class="item">м. Київ, пр-т Лесі Українки, 26
+                <div class="footer-tablet">
+                    <div class="contacts">
+                        <a href="./index.html" class="logo">Web<span class="logo2">Studio</span>
+                        </a>
+                        <address>
+                            <ul class="adres-nav list">
+                                <li class="item">м. Київ, пр-т Лесі Українки, 26
+                                </li>
+                                <li class="item"><a href="mailto:info@example.com"
+                                        class="secondary-link">info@example.com</a>
+                                </li>
+                                <li class="item"><a href="tel:+380991111111" class="secondary-link">+38 099 111 11 11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="link-position-footer">
+                        <h2 class="footer-title">Приєднуйтесь</h2>
+                        <ul class="social list">
+                            <li class="social-footer">
+                                <a href="" class="social-background-footer">
+                                    <svg width="20" height="20">
+                                        <use href="./images/icon.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="item"><a href="mailto:info@example.com" class="secondary-link">info@example.com</a>
+                            <li class="social-footer">
+                                <a href="" class="social-background-footer">
+                                    <svg width="20" height="20">
+                                        <use href="./images/icon.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="item"><a href="tel:+380991111111" class="secondary-link">+38 099 111 11 11</a></li>
+                            <li class="social-footer">
+                                <a href="" class="social-background-footer">
+                                    <svg width="20" height="20">
+                                        <use href="./images/icon.svg#icon-facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-footer">
+                                <a href="" class="social-background-footer">
+                                    <svg width="20" height="20">
+                                        <use href="./images/icon.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                    </address>
-                </div>
-                <div class="link-position-footer">
-                    <h2 class="footer-title">Приєднуйтесь</h2>
-                    <ul class="social list">
-                        <li class="social-footer">
-                            <a href="" class="social-background-footer">
-                                <svg width="20" height="20">
-                                    <use href="./images/icon.svg#icon-instagram-2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-footer">
-                            <a href="" class="social-background-footer">
-                                <svg width="20" height="20">
-                                    <use href="./images/icon.svg#icon-twitter-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-footer">
-                            <a href="" class="social-background-footer">
-                                <svg width="20" height="20">
-                                    <use href="./images/icon.svg#icon-facebook-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-footer">
-                            <a href="" class="social-background-footer">
-                                <svg width="20" height="20">
-                                    <use href="./images/icon.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
                 <div class="email-feedback">
                     <h2 class="footer-title">Підпишіться на розсилку</h3>
