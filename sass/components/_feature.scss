@@ -42,6 +42,10 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+    .feature-list__title{
+        text-align: left;
+    }
+        
     .feature-list__item{
             width: calc((100% - 30px)/2);
             margin-right: 30px;
