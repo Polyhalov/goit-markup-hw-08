@@ -107,6 +107,10 @@ img {
   display: none;
 }
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .outsite-nav {
   display: none;
 }
@@ -232,7 +236,7 @@ img {
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 796px;
+  height: 100vh;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -247,9 +251,14 @@ img {
 }
 
 .mobile-menu__container {
-  height: 100vh;
+  height: 100%;
   position: relative;
-  padding-left: 25px;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu_close-btn {
@@ -272,10 +281,6 @@ img {
   height: 40px;
 }
 
-.menu-nav__list {
-  padding-top: 48px;
-}
-
 .menu-nav__item + .menu-nav__item {
   margin-top: 32px;
 }
@@ -296,7 +301,7 @@ img {
 }
 
 .menu-ifo {
-  margin-top: 306px;
+  margin-top: auto;
 }
 
 .menu-info__item + .menu-info__item {
@@ -326,11 +331,9 @@ img {
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
-}
-
-.menu-social__item + .menu-social__item {
-  margin-left: 20px;
+  gap: 20px;
 }
 
 .menu-social__item {
@@ -576,6 +579,12 @@ img {
 }
 .team {
   background-color: var(--card-color);
+}
+
+.htitle {
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
 }
 
 .section-team {
@@ -952,7 +961,8 @@ footer .logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
