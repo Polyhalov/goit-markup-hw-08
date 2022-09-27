@@ -455,7 +455,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop-img@2x.jpg");
   }
 }
-.feature-section-mobile {
+.feature-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -524,6 +524,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .feature-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .feature-list__item {
     width: calc((100% - 90px) / 4);
     margin-right: 0;
@@ -548,6 +552,17 @@ img {
 @media screen and (min-width: 1200px) {
   .work-list {
     display: flex;
+  }
+  .work-section {
+    padding-bottom: 94px;
+  }
+  .work-title {
+    display: block;
+  }
+  .htitle {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
   .work-list__item {
     width: calc((100% - 60px) / 3);
@@ -684,6 +699,11 @@ img {
     width: calc((100% - 90px) / 4);
     margin-right: 0;
     margin-bottom: 0;
+  }
+  .htitle {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
   .team-list .card + .card {
     margin-left: 30px;
@@ -919,6 +939,7 @@ footer .logo {
     margin-left: 70px;
   }
   .footer-tablet {
+    align-items: baseline;
     padding: 0;
   }
   .email-feedback {
@@ -1163,8 +1184,8 @@ footer .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 9px;
-  margin-bottom: 50px;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
 
 .portfolio-nav .filter {
@@ -1282,6 +1303,7 @@ footer .logo {
     flex-wrap: wrap;
   }
   .portfolio-nav {
+    margin-bottom: 30px;
     justify-content: center;
   }
 }

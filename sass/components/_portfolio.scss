@@ -6,8 +6,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    gap: 9px;
-    margin-bottom: 50px;
+    gap: 15px 8px;
+    margin-bottom: 40px;
 }
 
 
@@ -132,6 +132,7 @@
             flex-direction: row;
             flex-wrap: wrap;}
         .portfolio-nav {
+            margin-bottom: 30px;
             justify-content:center;}
 }
 @media screen and (min-width:1200px){

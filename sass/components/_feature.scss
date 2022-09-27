@@ -1,4 +1,4 @@
-.feature-section-mobile{
+.feature-section{
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -63,6 +63,10 @@
 
     }
 @media screen and (min-width:1200px){
+    .feature-section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
     .feature-list__item{
             width: calc((100% - 90px)/4);
             margin-right: 0;
