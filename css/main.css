@@ -1016,7 +1016,6 @@ footer .logo {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    height: 581px;
   }
 }
 .modal-title {
@@ -1107,7 +1106,7 @@ footer .logo {
   border: 2px solid #212121;
   border-radius: 2px;
   margin-left: 14px;
-  margin-right: 9px;
+  margin-right: 8px;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1120,10 +1119,6 @@ footer .logo {
 }
 .checkbox:focus + .custom-check {
   border: 2px solid var(--hover-color);
-}
-
-.check-text {
-  margin: 0;
 }
 
 .check-label {
